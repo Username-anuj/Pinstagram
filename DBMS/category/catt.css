@@ -1,0 +1,10 @@
+{font-family: Calibri;
+font-size: 18px;}
+
+input[type:"checkbox"]
+{
+display:none;}
+
+input[type:"checkbox"]+ span:before{
+content:url('art1.png');
+margin-right:15px;}

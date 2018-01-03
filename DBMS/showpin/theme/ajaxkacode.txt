@@ -1,0 +1,38 @@
+$(document).ready(function() {
+  var table = $(".asdfgh").DataTable({
+    "order": [[1, "asc"]]
+  });
+
+  // Add event listener for opening and closing details
+  $(".asdfgh tbody").on("click", "td.details-control", function() {
+    var tr = $(this).closest("tr");
+    var row = table.row(tr);
+    // var bhangar = $(this).find('.uid').text();
+    // console.log(bhangar);
+
+var data = table.row( $(this).parents() ).data();/*parents('tr')*/
+var userid = parseInt(data[1]);
+console.log(userid);
+        // alert($.type(userid) );
+    $.ajax({
+                type: 'POST',
+                url: 'view_user_details.php?userid='+userid,
+                success: function(data) {
+                    // alert(data);
+                    $(".dikhadebhai").text(data);
+
+                }
+            });
+      if (row.child.isShown()) {
+      row.child.hide();
+      tr.removeClass("shown");
+    }
+    else {
+      row.child("<div><p class='dikhadebhai'></p></div>"+userid).show();
+      tr.addClass("shown");
+    }
+  });
+   $('.asdfgh tbody').on( 'click', "td.details-control", function () {
+        
+    } );
+});

@@ -1,0 +1,122 @@
+.btn{
+			background-color: transparent; 
+			color: #337ab7; 
+			font-size: 100%; 
+			padding:0px; 
+			border:none
+		}
+
+		.btn:hover{
+			color:#23527c;
+			text-decoration: underline;
+			background: transparent;
+		}
+
+		#follow{
+			color: #ffffff;
+			font-family: "Helvetica";
+			font-size: 10pt;
+			background-color: #b30000;
+			border: 1px solid;
+			border-color: #b30000;
+			border-radius: 3px;
+			width: 85px;
+			height: 30px;
+			float: right;
+			position: absolute;
+			top:15px;
+			right: 5px;
+		}
+
+		#unfollow{
+			color: #b30000;
+			font-family: "Helvetica";
+			font-size: 10pt;
+			background-color: #ffffff;
+			border: 1px solid;
+			border-color: #b30000;
+			border-radius: 3px;
+			width: 85px;
+			height: 30px;
+			float: right;
+			position: absolute;
+			top:15px;
+			right: 5px;
+		}
+
+		#sub{
+			color: #ffffff;
+			font-family: "Helvetica";
+			font-size: 10pt;
+			background-color: #b30000;
+			border: 1px solid;
+			border-color: #b30000;
+			border-radius: 3px;
+			width: 85px;
+			height: 30px;
+			position: absolute;
+			bottom:35px;
+		}
+		#likefollow{
+			color: #ffffff;
+			font-family: "Helvetica";
+			font-size: 10pt;
+			background-color: #b30000;
+			border: 1px solid;
+			border-color: #b30000;
+			border-radius: 3px;
+			width: 85px;
+			height: 30px;
+			float: right;
+			position: absolute;
+			right: 5px;
+
+
+		}
+		#likeunfollow{
+			color: #b30000;
+			font-family: "Helvetica";
+			font-size: 10pt;
+			background-color: #ffffff;
+			border: 1px solid;
+			border-color: #b30000;
+			border-radius: 3px;
+			width: 85px;
+			height: 30px;
+			float: right;
+			position: relative;
+			top:15px;
+			right: 5px;
+
+		}
+
+		#save:hover{
+			background:#337ab7!important;
+			color: white;
+		}
+
+		#createboard{
+			background:#337ab7!important;
+			color: white;
+			position: absolute;
+			bottom: 20px;
+			right: 20px;
+			padding: 15px;
+
+		}
+
+		#cancel{
+			background:#a6a6a6!important;
+			color: #4d4d4d;
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			padding: 15px;
+		}
+
+		#share{
+			background: transparent;
+			color:white;
+			font-weight: bold;
+			width: 100%;
+		}

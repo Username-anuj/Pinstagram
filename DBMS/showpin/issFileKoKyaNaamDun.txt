@@ -1,0 +1,13 @@
+<div class="form-group">
+											Add Address:
+											<form id="myFormId" >
+												<textarea id="nameValidation" onkeyup="hojabhai()" class="form-control" name="address" placeholder="Enter your address for buying pins" required><?php echo $_SESSION['address']; ?></textarea>
+												<script>
+													var userkaaddress='<?php echo $addr 	?>';
+													function hojabhai(){
+														userkaaddress = $('#myFormId').serialize();
+														$('#lejabhai').attr("href","buypin.php?pid=<?php echo $pid ?>&"+userkaaddress);
+													}
+												</script>
+											
+										</div>

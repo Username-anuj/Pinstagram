@@ -1,0 +1,4 @@
+create procedure pin_info(IN pid int(5),IN colname varchar(10)) begin set @sql = concat('SELECT ',colname,' FROM Pin WHERE PinId=',pid); PREPARE stmt from @sql; EXECUTE stmt; DEALLOCATE PREPARE stmt; end//
+create procedure user_info(IN uid int(5),IN colname varchar(10)) begin set @sql = concat('SELECT ',colname,' FROM User WHERE UserId=',uid); PREPARE stmt from @sql; EXECUTE stmt; DEALLOCATE PREPARE stmt; end//
+create procedure cat_from_pin(IN pid int(5)) begin set @sql = concat('Select CatName FROM Categories where CatId = (select CatId from Pin WHERE PinId=',pid,')'); PREPARE stmt from @sql; EXECUTE stmt; DEALLOCATE PREPARE stmt; end//
+create procedure user_from_pin(IN pid int(5)) begin set @sql = concat('Select * FROM User where UserId = (select UserId from Pin WHERE PinId=',pid,')'); PREPARE stmt from @sql; EXECUTE stmt; DEALLOCATE PREPARE stmt; end//

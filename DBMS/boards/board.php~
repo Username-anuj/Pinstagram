@@ -1,0 +1,35 @@
+<?php<!DOCTYPE html>
+<html>
+<head>
+<title> Boards Page </title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="sc.js"></script>
+</head>
+<body>
+<center>
+<div id="main">
+<div id="form">
+<form action="upload.php" method="post" enctype="multipart/form-data">
+Name your board:
+<br>
+<div id="nm">
+<input type="text" name="Boardnm">
+</div>
+<br>
+Select image to upload:
+<br>
+<div id="filediv">
+<input type="file" name="file[]" id="file">
+</div>
+<br>
+<input type="button" id="add_more" class="upload" style="background-image: url('rsz_iconplus.png'); width:70px; height:70px; background-repeat: no-repeat;
+background-position: 50% 50%; border-radius: 100px;" ><br>
+<input type="submit" value="Add" name="submit">
+<br>
+</form>
+</div>
+</div>
+</center>
+</body>
+</html>
+?>
